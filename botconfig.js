@@ -14,7 +14,7 @@ module.exports = {
   "24/7": false, //If you want the bot to be stay in the vc 24/7
   CookieSecret: "Pikachu is cute", //A Secret like a password
   IconURL:
-    "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
+    "https://raw.githubusercontent.com/kabuspl/Discord-MusicBot/master/assets/logo.gif", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
   EmbedColor: "RANDOM", //Color of most embeds | Dont edit unless you want a specific color instead of a random one each time
   Permissions: 2205281600, //Bot Inviting Permissions
   Website: process.env.Website || "http://localhost", //Website where it was hosted at includes http or https || Use "0.0.0.0" if you using Heroku
@@ -28,10 +28,10 @@ module.exports = {
   //Lavalink
   Lavalink: {
     id: "Main",
-    host: "host name or IP",
-    port: 80, // The port that lavalink is listening to. This must be a number!
-    pass: "your password",
-    secure: false, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
+    host: "lavalink-replit.jakubsakra.repl.co",
+    port: 443, // The port that lavalink is listening to. This must be a number!
+    pass: "maybeiwasboring",
+    secure: true, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
   },
 
   //Please go to https://developer.spotify.com/dashboard/
