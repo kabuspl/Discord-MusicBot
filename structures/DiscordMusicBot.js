@@ -13,6 +13,8 @@ const deezer = require("erela.js-deezer");
 const apple = require("erela.js-apple");
 const facebook = require("erela.js-facebook");
 
+const { end } = require("../events/ready.js");
+
 //Class extending Stuff
 require("discordjs-activity"); //Epic Package, For more details: https://www.npmjs.com/package/discordjs-activity
 require("./EpicPlayer"); //idk why im doing but i wanna learn something new so...
@@ -180,6 +182,9 @@ class DiscordMusicBot extends Client {
           .get(player.textChannel)
           .send(TrackStartedEmbed);
         player.setNowplayingMessage(NowPlaying);
+        client.user.setActivity(track.title, {
+        	type: "LISTENING"
+    	  });
       })
       .on("queueEnd", (player) => {
         let QueueEmbed = new MessageEmbed()
@@ -188,6 +193,7 @@ class DiscordMusicBot extends Client {
           .setTimestamp();
         client.channels.cache.get(player.textChannel).send(QueueEmbed);
         if (!this.botconfig["24/7"]) player.destroy();
+        end(client);
       });
   }
 
