@@ -14,7 +14,7 @@ module.exports = async (client) => {
 };
 
 module.exports.end = (client) => {
-  const splashes = [
+  /*const splashes = [
       "СУКА БЛЯТЬ",
       "big dik dżek",
       "hello ni🅱🅱a",
@@ -34,6 +34,9 @@ module.exports.end = (client) => {
       "0x0000007B INACCESSIBLE_BOOT_DEVICE",
       "Program explorer.exe przestał działać.",
       "Turniejowa kara czasowa 30 min",
+  ];*/
+  const splashes = [
+    "Tomb Raider"
   ];
   clearInterval(module.exports.timerr);
   let spl=splashes[(Math.floor(Math.random()*splashes.length))];
