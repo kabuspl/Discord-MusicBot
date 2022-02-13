@@ -36,7 +36,11 @@ module.exports.end = (client) => {
         "Turniejowa kara czasowa 30 min",
         "Vixa 2022",
         "O cholera pod pociąg wpadłem!",
-        "Masz granat? Proszę mi go rzucić w łeb."
+        "Masz granat? Proszę mi go rzucić w łeb.",
+        "No keyboard detected. Press F1 to continue.",
+        "system has been destroyed",
+        "i use arch btw",
+        "pacman -R pacman"
     ];
     clearInterval(module.exports.timerr);
     let spl = splashes[(Math.floor(Math.random() * splashes.length))];
