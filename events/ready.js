@@ -34,6 +34,9 @@ module.exports.end = (client) => {
       "0x0000007B INACCESSIBLE_BOOT_DEVICE",
       "Program explorer.exe przestał działać.",
       "Turniejowa kara czasowa 30 min",
+      "Vixa 2022",
+      "O cholera pod pociąg wpadłem!",
+      "Masz granat? Proszę mi go rzucić w łeb."
   ];
   clearInterval(module.exports.timerr);
   let spl=splashes[(Math.floor(Math.random()*splashes.length))];
