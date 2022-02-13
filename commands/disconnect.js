@@ -66,7 +66,7 @@ module.exports = {
                     "❌ | **Nothing is playing right now...**"
                 );
             player.destroy();
-            module.exports.end(client);
+            end(client);
             client.sendTime(interaction, ":notes: | **Disconnected!**");
         },
     },
