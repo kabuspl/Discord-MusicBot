@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const { end } = require("../events/ready.js");
 
 module.exports = {
     name: "disconnect",
