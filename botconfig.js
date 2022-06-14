@@ -29,16 +29,6 @@ module.exports = {
     secure: false, // Set this to true if the lavalink uses SSL. if not set it to false.
   },
 
-    // Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink/
-    // The default one should work fine, altho if you have issue with it, you can create your own or use another public lavalink.
-    Lavalink: {
-        id: "Main", //- Used for indentifier. You can set this to whatever you want.
-        host: "losingtime.dpaste.org", //- The host name or IP of the lavalink server.
-        port: 2124, // The port that lavalink is listening to. This must be a number!
-        pass: "SleepingOnTrains", //- The password of the lavalink server.
-        secure: false, // Set this to true if the lavalink uses SSL. if not set it to false.
-    },
-
     //Please go to https://developer.spotify.com/dashboard/
     Spotify: {
         ClientID: process.env.Spotify_ClientID || "", //Spotify Client ID
